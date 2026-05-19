@@ -32,20 +32,19 @@
   align-items: center;
 }
 
-/* Full-width blue title bar */
-.hero__title-bar {
-  display: block;
-  background: var(--blue-600);
-  color: #fff;
+.hero__title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: clamp(1.4rem, 3vw, 2.1rem);
-  letter-spacing: 0.03em;
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  color: #fff;
   text-transform: uppercase;
-  line-height: 1.2;
-  padding: 0.9rem 1.4rem;
-  border-radius: var(--r-md);
+  letter-spacing: 0.02em;
+  line-height: 1.1;
   margin-bottom: var(--s6);
+}
+
+.hero__title span {
+  color: var(--blue-600);
 }
 
 .hero__subtitle {
@@ -277,7 +276,7 @@
    § 3  PARA TI  (#001040 dark — card grid)
    ───────────────────────────────────────────────────────── */
 .para-ti {
-  background: #001040;
+  background: #fff;
   padding: var(--section-pad) 0;
 }
 
@@ -317,7 +316,8 @@
   font-size: 0.93rem;
   line-height: 1.55;
   color: var(--on-light-body);
-  border: none;
+  border: 1.5px solid var(--light-400);
+  box-shadow: var(--shadow-sm);
 }
 
 .para-ti__list li::before {
