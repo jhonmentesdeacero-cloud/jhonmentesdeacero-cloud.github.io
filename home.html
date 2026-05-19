@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentes de Acero — Jhon Moreno</title>
+  <meta name="description" content="Jhon Moreno — Autor, conferencista y creador del método Mentes de Acero. Manual para Forjar Guerreros." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/inicio.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/home.html" class="navbar__logo">Mentes de <span>Acero</span></a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="/home.html" class="is-active">Inicio</a></li>
+        <li><a href="/HTML/libro.html">Libro — Mentes de Acero</a></li>
+        <li class="navbar__dropdown">
+          <a href="/HTML/cursos.html">Cursos ▾</a>
+          <div class="navbar__dropdown-menu">
+            <a href="/HTML/cursos.html">Mentalidad de Acero</a>
+            <a href="/HTML/cursos.html">Proyecto de Vida</a>
+          </div>
+        </li>
+        <li><a href="/HTML/conferencias.html">Conferencias</a></li>
+        <li><a href="/HTML/contacto.html">Contacto</a></li>
+      </ul>
+      <div class="navbar__cta">
+        <a href="/HTML/libro.html" class="btn btn--primary btn--sm">Quiero el Libro</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ══════  HOME — split hero ══════ -->
+  <div class="home-hero" id="inicio">
+
+    <!-- Left: white panel -->
+    <div class="home-hero__left">
+      <div class="home-hero__content reveal-left">
+
+        <div class="home-hero__eyebrow">Nuevo libro disponible</div>
+        <div class="home-hero__author">Jhon Moreno</div>
+
+        <h1 class="home-hero__title">
+          MENTES<br>DE <span>ACERO</span>
+        </h1>
+        <p class="home-hero__tagline">Manual para Forjar Guerreros</p>
+
+        <div class="home-hero__divider"></div>
+
+        <p class="home-hero__desc">
+          El entrenamiento mental que nació después de sobrevivir a un atentado.
+          Hoy está ayudando a miles de personas a reconstruir su vida con
+          disciplina, propósito y mentalidad de acero.
+        </p>
+
+        <div class="home-hero__stats">
+          <div class="home-hero__stat">
+            <span class="home-hero__stat-value">7</span>
+            <span class="home-hero__stat-label">Misiones</span>
+          </div>
+          <div class="home-hero__stat">
+            <span class="home-hero__stat-value">3</span>
+            <span class="home-hero__stat-label">Partes</span>
+          </div>
+          <div class="home-hero__stat">
+            <span class="home-hero__stat-value">+1K</span>
+            <span class="home-hero__stat-label">Lectores</span>
+          </div>
+        </div>
+
+        <div class="home-hero__cta">
+          <a href="/HTML/libro.html" class="btn btn--primary btn--xl btn--pulse">
+            Descubrir el Libro
+          </a>
+          <div class="home-hero__price-row">
+            <span class="home-hero__price">$78.000</span>
+            <span class="home-hero__price-free">✈ Envío Gratis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right: dark panel + book -->
+    <div class="home-hero__right">
+      <div class="home-hero__right-ambient"></div>
+      <div class="home-hero__book-wrap reveal-right" data-tilt>
+        <img
+          src="/img/libro/libro(1).png"
+          alt="Libro Mentes de Acero — Manual para Forjar Guerreros por Jhon Moreno"
+          class="home-hero__book-img"
+          data-tilt-target
+          width="300"
+        />
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">Mentes de <span>Acero</span></div>
+      <p class="site-footer__copy">Copyright &copy; 2026 | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="/js/core.js"></script>
+</body>
+</html>

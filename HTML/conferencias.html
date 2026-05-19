@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conferencias - Mentes de Acero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/home.html" class="navbar__logo">Mentes de <span>Acero</span></a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__nav" id="navMenu">
+        <li><a href="/home.html">Inicio</a></li>
+        <li><a href="/HTML/libro.html">Libro — Mentes de Acero</a></li>
+        <li class="navbar__dropdown">
+          <a href="/HTML/cursos.html">Cursos ▾</a>
+          <div class="navbar__dropdown-menu">
+            <a href="/HTML/cursos.html">Mentalidad de Acero</a>
+            <a href="/HTML/cursos.html">Proyecto de Vida</a>
+          </div>
+        </li>
+        <li><a href="/HTML/conferencias.html" class="is-active">Conferencias</a></li>
+        <li><a href="/HTML/contacto.html">Contacto</a></li>
+      </ul>
+      <div class="navbar__cta">
+        <a href="/HTML/libro.html" class="btn btn--primary btn--sm">Quiero el Libro</a>
+      </div>
+    </div>
+  </nav>
+  <section class="section bg-dark" style="min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;">
+    <div class="container">
+      <div class="overline" style="justify-content:center;">Próximamente</div>
+      <h1 class="section-title section-title--xl" style="color:#fff;margin:1rem 0;">CONFERENCIAS</h1>
+      <p style="color:var(--on-dark-body);max-width:480px;margin:0 auto 2rem;">Estamos preparando el contenido. Vuelve pronto.</p>
+      <a href="/HTML/libro.html" class="btn btn--primary btn--lg">Ver el Libro</a>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__logo">Mentes de <span>Acero</span></div>
+      <p class="site-footer__copy">Copyright &copy; 2026 | All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="/js/core.js"></script>
+</body>
+</html>
