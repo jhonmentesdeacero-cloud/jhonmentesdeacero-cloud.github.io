@@ -159,7 +159,19 @@
    ───────────────────────────────────────────────────────── */
 .historia {
   background: #001040;
-  padding: 3rem 0;
+  padding: var(--section-pad) 0;
+}
+
+.historia__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: var(--s12);
 }
 
 .historia__grid {
