@@ -4,6 +4,7 @@
 
 :root {
   /* ── Dark palette ─────────────────────────────── */
+  --dark-1000: #00030c;  /* fondo más oscuro absoluto       */
   --dark-950: #001034;   /* AZUL #4 — fondo más oscuro     */
   --dark-900: #001540;   /* intermedio                     */
   --dark-800: #001d54;   /* AZUL #3                        */
@@ -20,7 +21,7 @@
   --blue-700: #003d8c;   /* más oscuro que AZUL #2         */
   --blue-600: #0066ff;   /* AZUL #1 — primary CTA          */
   --blue-500: #1a74ff;   /* hover                          */
-  --blue-400: #4d8eff;   /* accent sobre fondos oscuros    */
+  --blue-400: #00fff0;   /* accent sobre fondos oscuros    */
   --blue-300: #00fff0;   /* RESALTADOR #3 — acento cian    */
   --blue-200: #e0ebff;   /* tint claro                     */
   --blue-100: #f0f5ff;

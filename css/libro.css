@@ -20,7 +20,7 @@
    § 1  HERO  (#0a0a0a)
    ───────────────────────────────────────────────────────── */
 .hero {
-  background: #0a0a0a;
+  background: var(--dark-1000);
   padding: var(--section-pad) 0;
   overflow: hidden;
 }
@@ -35,11 +35,11 @@
 .hero__title {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem);
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  line-height: 1.1;
+  line-height: 1.12;
   margin-bottom: var(--s6);
 }
 
@@ -57,11 +57,9 @@
 
 .hero__discover-label {
   display: block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: var(--s2);
 }
 
@@ -77,14 +75,14 @@
 }
 
 .hero__offer-card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--r-md);
   padding: var(--s4) var(--s5);
-  color: var(--on-light-body);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.97rem;
   line-height: 1.65;
   margin-bottom: var(--s6);
-  box-shadow: var(--shadow-md);
 }
 
 .hero__cta-wrap {
@@ -96,9 +94,9 @@
 
 .hero__price-row {
   display: flex;
-  align-items: baseline;
-  gap: var(--s3);
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s1);
 }
 
 .hero__price-label {
@@ -117,12 +115,10 @@
 }
 
 .hero__price-free {
-  font-family: 'Oswald', sans-serif;
+  font-size: 0.95rem;
   font-weight: 600;
-  font-size: 1rem;
   color: var(--blue-400);
-  font-style: italic;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .hero__book-wrap {
@@ -355,22 +351,39 @@
   padding: var(--section-pad) 0;
 }
 
+.misiones__header {
+  text-align: center;
+  margin-bottom: var(--s12);
+}
+
+.misiones__header .overline {
+  justify-content: center;
+}
+
+.misiones__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  margin-bottom: var(--s4);
+}
+
+.misiones__subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  line-height: 1.78;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
 .misiones__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--s12);
   align-items: center;
-}
-
-.misiones__intro {
-  color: var(--on-dark-body);
-  font-size: 1.05rem;
-  line-height: 1.78;
-  margin-bottom: var(--s5);
-}
-
-.misiones__intro strong {
-  color: #fff;
 }
 
 .misiones__aprenderás {
@@ -382,10 +395,10 @@
 }
 
 .misiones__check-box {
-  background: var(--blue-600);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--r-md);
   padding: var(--s5) var(--s6);
-  margin-bottom: var(--s8);
   list-style: none;
 }
 
@@ -393,11 +406,11 @@
   display: flex;
   align-items: flex-start;
   gap: var(--s3);
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.95rem;
   line-height: 1.6;
-  padding: var(--s2) 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  padding: var(--s3) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 .misiones__check-box li:last-child {
@@ -407,7 +420,7 @@
 .misiones__check-box li::before {
   content: '✓';
   flex-shrink: 0;
-  color: #fff;
+  color: var(--blue-400);
   font-weight: 700;
   font-size: 0.9rem;
   margin-top: 0.15rem;
@@ -418,38 +431,42 @@
 }
 
 .misiones__not-motivation {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.55);
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: var(--s4);
 }
 
 .misiones__real-training {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
-  color: var(--blue-400);
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   line-height: 1.15;
   margin-bottom: var(--s6);
 }
 
+.misiones__real-training span {
+  color: var(--blue-400);
+}
+
 .misiones__brand-pill {
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: var(--r-full);
-  padding: 0.45rem 1.4rem;
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--r-md);
+  padding: 0.55rem 1.6rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: var(--s8);
+  margin-bottom: var(--s6);
 }
 
 .misiones__brand-pill span {
