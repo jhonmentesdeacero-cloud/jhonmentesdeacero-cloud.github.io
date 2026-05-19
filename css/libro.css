@@ -264,13 +264,18 @@
 
 .historia__rendirse {
   display: block;
-  color: #e53e3e;
+  color: #fff;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: clamp(1.2rem, 2.5vw, 1.7rem);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin-bottom: var(--s3);
+}
+
+.historia__rendirse-tachado {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .historia__eligio {
@@ -1231,6 +1236,34 @@
 .testimonios__header {
   text-align: center;
   margin-bottom: var(--s8);
+}
+
+.testimonios__social-proof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s2);
+  margin-bottom: var(--s10);
+  padding: var(--s6) 0;
+  border-top: 1px solid var(--light-400);
+  border-bottom: 1px solid var(--light-400);
+}
+
+.testimonios__big-number {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--blue-600);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.testimonios__big-label {
+  font-size: 1rem;
+  color: var(--on-light-muted);
+  max-width: 320px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .testimonios__title {
