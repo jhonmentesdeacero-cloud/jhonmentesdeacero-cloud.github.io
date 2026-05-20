@@ -11,7 +11,7 @@
   const NAVBAR_HTML = `
 <nav class="navbar" id="navbar">
   <div class="navbar__inner">
-    <a href="/HTML/home.html" class="navbar__logo">Mentes de <span>Acero</span></a>
+    <a href="/" class="navbar__logo">Mentes de <span>Acero</span></a>
     <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
