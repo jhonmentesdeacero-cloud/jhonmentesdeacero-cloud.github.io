@@ -86,4 +86,18 @@
     });
   }
 
+  /* ── Sticky CTA — aparece al salir del hero en mobile ──── */
+  const stickyCta  = document.getElementById('stickyCta');
+  const heroEl     = document.getElementById('inicio');
+  if (stickyCta && heroEl) {
+    const onScrollSticky = () => {
+      const heroBottom = heroEl.getBoundingClientRect().bottom;
+      const visible    = heroBottom < 0;
+      stickyCta.classList.toggle('is-visible', visible);
+      stickyCta.setAttribute('aria-hidden', String(!visible));
+    };
+    window.addEventListener('scroll', onScrollSticky, { passive: true });
+    onScrollSticky();
+  }
+
 })();

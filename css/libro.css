@@ -1,3 +1,69 @@
+/* ─────────────────────────────────────────────────────────
+   STICKY CTA  — mobile only
+   ───────────────────────────────────────────────────────── */
+.sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 850;
+  background: rgba(1, 16, 52, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(0, 102, 255, 0.35);
+  padding: var(--s3) var(--s4);
+  transform: translateY(100%);
+  transition: transform var(--t3) var(--ease-out);
+}
+
+.sticky-cta.is-visible {
+  transform: translateY(0);
+}
+
+.sticky-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s4);
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.sticky-cta__price-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.sticky-cta__label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.04em;
+}
+
+.sticky-cta__price {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.sticky-cta__btn {
+  flex-shrink: 0;
+  font-size: 0.82rem !important;
+  padding: 0.7rem 1.4rem !important;
+  letter-spacing: 0.07em !important;
+}
+
+@media (min-width: 769px) {
+  .sticky-cta { display: none !important; }
+}
+
+@media (max-width: 768px) {
+  .sticky-cta { display: block; }
+}
+
+
 /* ═══════════════════════════════════════════════════════════
    LIBRO.CSS  —  Styles specific to libro.html
    Section order:
