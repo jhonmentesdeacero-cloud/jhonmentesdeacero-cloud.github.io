@@ -16,20 +16,20 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="navbar__nav" id="navMenu">
-      <li><a href="/HTML/home.html">Inicio</a></li>
-      <li><a href="/HTML/libro.html">Libro — Mentes de Acero</a></li>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/libro/">Libro — Mentes de Acero</a></li>
       <li class="navbar__dropdown">
-        <a href="/HTML/cursos.html">Cursos ▾</a>
+        <a href="/cursos/">Cursos ▾</a>
         <div class="navbar__dropdown-menu">
-          <a href="/HTML/cursos.html">Mentalidad de Acero</a>
-          <a href="/HTML/cursos.html">Proyecto de Vida</a>
+          <a href="/cursos/">Mentalidad de Acero</a>
+          <a href="/cursos/">Proyecto de Vida</a>
         </div>
       </li>
-      <li><a href="/HTML/conferencias.html">Conferencias</a></li>
-      <li><a href="/HTML/contacto.html">Contacto</a></li>
+      <li><a href="/conferencias/">Conferencias</a></li>
+      <li><a href="/contacto/">Contacto</a></li>
     </ul>
     <div class="navbar__cta">
-      <a href="/HTML/libro.html" class="btn btn--primary btn--sm">Quiero el Libro</a>
+      <a href="/libro/" class="btn btn--primary btn--sm">Quiero el Libro</a>
     </div>
   </div>
 </nav>`;
@@ -62,11 +62,11 @@
       </a>
     </div>
     <div class="site-footer__legal">
-      <a href="/HTML/privacidad.html">Política de Privacidad</a>
+      <a href="/privacidad/">Política de Privacidad</a>
       <span class="site-footer__legal-sep">·</span>
-      <a href="/HTML/terminos.html">Términos y Condiciones</a>
+      <a href="/terminos/">Términos y Condiciones</a>
       <span class="site-footer__legal-sep">·</span>
-      <a href="/HTML/contacto.html">Contacto</a>
+      <a href="/contacto/">Contacto</a>
     </div>
     <p class="site-footer__copy">COPYRIGHT &copy; 2026 MENTES DE ACERO | ALL RIGHTS RESERVED</p>
   </div>
@@ -81,11 +81,12 @@
 
   /* ── Active link (by pathname) ──────────────────────────── */
 
-  const path = window.location.pathname;
+  const norm = s => s.replace(/\/$/, '') || '/';
+  const path = norm(window.location.pathname);
   document.querySelectorAll('.navbar__nav a[href]').forEach(link => {
     const href = link.getAttribute('href');
     if (!href || href.startsWith('#')) return;
-    link.classList.toggle('is-active', path === href);
+    link.classList.toggle('is-active', path === norm(href));
   });
 
   /* ── Navbar scroll state ────────────────────────────────── */
