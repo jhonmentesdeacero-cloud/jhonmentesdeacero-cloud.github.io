@@ -29,6 +29,20 @@
   /* ── Grey ─────────────────────────────────────── */
   --grey-400: #444444;   /* GRIS #4                        */
 
+  /* ── Surfaces / UI ───────────────────────────────── */
+  --navbar-bg:          rgba(4, 8, 28, 0.80);
+  --navbar-bg-scrolled: rgba(4, 8, 28, 0.82);
+  --dropdown-bg:        rgba(5, 10, 30, 0.98);
+  --footer-bg:          #020510;
+  --card-dark-bg:       rgba(9, 16, 46, 0.90);
+  --sticky-bg:          rgba(1, 16, 52, 0.97);
+  --border-subtle:      rgba(255, 255, 255, 0.06);
+  --border-light:       rgba(255, 255, 255, 0.12);
+  --border-blue-subtle: rgba(0, 102, 255, 0.30);
+  --white:              #ffffff;
+  --black:              #000000;
+  --red-error:          #e53e3e;
+
   /* ── Text ─────────────────────────────────────── */
   --on-dark-heading:   #ffffff;
   --on-dark-body:      #8aadd0;
