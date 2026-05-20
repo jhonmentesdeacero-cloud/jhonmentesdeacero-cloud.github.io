@@ -1,0 +1,180 @@
+/* ═══════════════════════════════════════════════════════════
+   CONTACTO.CSS — Clean white card layout
+   ═══════════════════════════════════════════════════════════ */
+
+.contacto-page {
+  min-height: 100vh;
+  background: var(--light-100);
+  display: flex;
+  align-items: center;
+  padding: 8rem 0 6rem;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.contacto__wrap {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contacto__header {
+  margin-bottom: var(--s10);
+}
+
+.contacto__author {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--on-light-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--s3);
+}
+
+.contacto__title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  color: var(--on-light-heading);
+  letter-spacing: 0.06em;
+  line-height: 1;
+  margin: 0 0 var(--s2);
+}
+
+.contacto__divider {
+  width: 100%;
+  height: 1px;
+  background: var(--light-400);
+  margin: var(--s6) 0 0;
+}
+
+/* ── Cards ────────────────────────────────────────────────── */
+.contacto__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s4);
+}
+
+.contacto__card {
+  display: flex;
+  align-items: center;
+  gap: var(--s5);
+  padding: var(--s5) var(--s6);
+  background: var(--white);
+  border-radius: 14px;
+  border: 1.5px solid var(--light-400);
+  text-decoration: none;
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+.contacto__card:hover {
+  border-color: var(--blue-600);
+  box-shadow: 0 8px 28px rgba(0, 102, 255, 0.10);
+  transform: translateY(-2px);
+}
+
+/* WhatsApp — featured */
+.contacto__card--primary {
+  border-color: rgba(37, 211, 102, 0.35);
+  background: #f0fdf6;
+}
+.contacto__card--primary:hover {
+  border-color: #25d366;
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.14);
+}
+
+/* Icon bubble */
+.contacto__icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--light-100);
+  border: 1.5px solid var(--light-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--blue-600);
+  transition: background 0.22s ease, border-color 0.22s ease;
+}
+
+.contacto__card:hover .contacto__icon {
+  background: var(--blue-600);
+  border-color: var(--blue-600);
+  color: var(--white);
+}
+
+.contacto__card--primary .contacto__icon {
+  color: #25d366;
+  border-color: rgba(37, 211, 102, 0.3);
+  background: var(--white);
+}
+
+.contacto__card--primary:hover .contacto__icon {
+  background: #25d366;
+  border-color: #25d366;
+  color: var(--white);
+}
+
+/* Text */
+.contacto__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.contacto__platform {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--on-light-heading);
+  letter-spacing: 0.03em;
+  display: block;
+}
+
+.contacto__handle {
+  font-size: 0.82rem;
+  color: var(--on-light-muted);
+  display: block;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Arrow */
+.contacto__go {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--light-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--on-light-muted);
+  font-size: 0.85rem;
+  transition: background 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+}
+
+.contacto__card:hover .contacto__go {
+  background: var(--blue-600);
+  border-color: var(--blue-600);
+  color: var(--white);
+}
+
+.contacto__card--primary:hover .contacto__go {
+  background: #25d366;
+  border-color: #25d366;
+  color: var(--white);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .contacto__list { grid-template-columns: repeat(2, 1fr); }
+  .contacto__title { font-size: clamp(3rem, 12vw, 5rem); }
+}
+
+@media (max-width: 480px) {
+  .contacto-page { padding: 7rem 0 4rem; }
+  .contacto__list { grid-template-columns: 1fr; }
+  .contacto__card { padding: var(--s4) var(--s5); }
+  .contacto__icon { width: 40px; height: 40px; border-radius: 10px; }
+}
