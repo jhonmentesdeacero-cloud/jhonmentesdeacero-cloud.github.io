@@ -62,9 +62,9 @@
       </a>
     </div>
     <div class="site-footer__legal">
-      <a href="#">Política de Privacidad</a>
+      <a href="/HTML/privacidad.html">Política de Privacidad</a>
       <span class="site-footer__legal-sep">·</span>
-      <a href="#">Términos y Condiciones</a>
+      <a href="/HTML/terminos.html">Términos y Condiciones</a>
       <span class="site-footer__legal-sep">·</span>
       <a href="/HTML/contacto.html">Contacto</a>
     </div>
